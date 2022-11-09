@@ -1,7 +1,8 @@
 
 * {
     margin: 0%;
-    padding: 0%;box-sizing: border-box;
+    padding: 0%;
+    box-sizing: border-box;
 
 }
 
@@ -28,18 +29,20 @@ text-align: center;
 
 
 h1 {
-display: grid;
-grid-template-columns:none;
+display: flex;
 margin-top: 2rem;
 margin-bottom: 2rem;
-padding: 2rem;
-justify-items: center;
-text-align: center;
+padding: 13rem;
 color:rgb(9, 8, 0);
 font-size:45px; 
 font-family: 'Montserrat', sans-serif;
-background-color: darkorange;
+background-image: url(../img/backg.jpeg);
+background-size:cover;
+background-attachment: fixed;
+background-repeat: no-repeat;
+background-position: 100%;
 
+ 
 
 
 
@@ -228,7 +231,7 @@ iframe {
 
 .contenedor {  
     display:grid;
-    margin: 200px, 100px, 200px, 100px;
+    margin-top: 5rem;
     grid-template-columns: 20rem 20rem 20rem;
     grid-template-rows: 15rem 5rem 30rem;
     gap: 80px 100px;
