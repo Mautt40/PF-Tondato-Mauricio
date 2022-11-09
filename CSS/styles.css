@@ -1,7 +1,9 @@
 
-/*font-family: 'Montserrat', sans-serif;
-font-family: 'Roboto', sans-serif;*/
+* {
+    margin: 0%;
+    padding: 0%;box-sizing: border-box;
 
+}
 
 body {
 
@@ -27,19 +29,18 @@ text-align: center;
 
 h1 {
 display: grid;
-
-margin-left: 50px;
-margin-right:50px ;
-margin-top: 3rem;
+grid-template-columns:none;
+margin-top: 2rem;
+margin-bottom: 2rem;
 padding: 2rem;
+justify-items: center;
+text-align: center;
 color:rgb(9, 8, 0);
-text-align: center; 
-
 font-size:45px; 
 font-family: 'Montserrat', sans-serif;
 background-color: darkorange;
 
-text-align: center;
+
 
 
 
@@ -185,7 +186,9 @@ table {
     
 }
 
-
+iframe {
+    max-width: 100%;
+}
 
 /*atributos de clase*/
 .logo {
@@ -222,12 +225,113 @@ table {
     margin-right: 35px;
  }
 
-.video { 
-   
-    width: 600px;
-    height: 400PX;
-    margin-bottom: 45PX;
+
+.contenedor {  
+    display:grid;
+    margin: 200px, 100px, 200px, 100px;
+    grid-template-columns: 20rem 20rem 20rem;
+    grid-template-rows: 15rem 5rem 30rem;
+    gap: 80px 100px;
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+      "icon-1 icon-2 icon3"
+      "aside1 video video"
+      "aside2 video video";
+      
+  }
+  
+  .icon-1 { 
+    
+    grid-area: icon-1; 
+    width: 200px;
+    border-color: #ff9d00;
+    border-style: solid;
+    padding: 30px;
+ }
+  
+  .icon-2 { grid-area: icon-2;
+     width: 200px;
+     border-color: #ff9d00;
+     border-style: solid;
+     padding: 30px;
+    
+    }
+  
+  .icon3 { grid-area: icon3;
+    width: 200px;
+    border-color: #ff9d00;
+    border-style: solid;
+    padding: 30px;
+
 }
+  
+  .video { grid-area: video;
+    display: grid;
+    vertical-align: top;
+    align-content: flex-start;
+    
+  
+   
+    }
+
+    .video iframe {
+        display: grid;
+        width: 650px;
+        height: 640px;
+       align-content: flex-start;
+        
+    }
+  
+    .aside1 {
+        grid-area: aside1;
+        display: grid;
+        flex-wrap: nowrap;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+       
+    }
+     
+    .aside2 {
+        display: grid;
+        align-items: stretch;
+
+    }
+   .textoaside {
+    align-items: center;
+    padding: 15px;
+    justify-content: center;
+    text-align: center; 
+    border-style: solid;
+    border-color: #faf1f1  2px  ;
+   }
+
+   .textoaside2 {
+    align-items: stretch;
+    padding: 15px;
+    justify-content: center;
+    text-align: center; 
+    border-style: solid;
+    border-color: #090000  2px  ;
+    background-color: hsl(41, 94%, 50%);
+    color: #000000;
+    font-weight: bolder;
+    font-size: 34px;
+  
+
+ }
+   
+
+
+
+
+
+
+
+
+
+
 
 .titulo {
     color: black; 
