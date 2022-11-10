@@ -58,7 +58,7 @@ ul li a {
     line-height: 36px;
     font-size: 30px;
     color: rgb(241, 236, 236);
-    transition: .5s;
+    transition: .3s;
   }
   
  
@@ -116,29 +116,35 @@ align-items: center;
 }
 
 input {
+    display: grid;
     margin-top:25px; 
     background-color: rgb(204, 204, 204);
-    margin-left:25px; 
-    margin-block-start: 30px;
+    text-align: center;
+    align-items: center;
+   
 }
 
 fieldset {
-    width:500px ;
+    width:800px ;
+    height: 900px;
     margin-top: 15px; 
-    background-image: url(../img/wall.jpg); 
+    background-image: url(../img/backg.jpeg); 
     font-size:32px; 
-    display:inline-block;
-    padding: 75px;
+    display:grid;
+    text-align: center;
+    align-content: center;
+    
+    padding: 15px;
     box-shadow:2rem; 
-    border-color:rgb(196, 9, 9);
+    border-color:rgb(241, 165, 2);
     border-width: 15px; 
-    color: blanchedalmond;
+    color: rgb(7, 4, 0);
     border-radius: 20px;
     
  
 }
 label {
-    display: inline-block;
+    display:flex;
     width: 150px;
     margin-left: 70px;
 }
@@ -181,11 +187,11 @@ td {
 }
 
 table {
-    border:3;
+    
     padding-top:20PX;
     border-spacing:45px; 
-    align-items: center;
-    margin: 40px;
+   text-align: center;
+    background-image: url(../img/backg.jpeg);
     
 }
 
@@ -234,42 +240,98 @@ iframe {
     margin-top: 5rem;
     grid-template-columns: 20rem 20rem 20rem;
     grid-template-rows: 15rem 5rem 30rem;
-    gap: 80px 100px;
+    gap: 100px 100px;
     align-items: center;
     justify-items: center;
     grid-template-areas:
-      "icon-1 icon-2 icon3"
+      "imagen1 imagen2 imagen3"
       "aside1 video video"
       "aside2 video video";
       
   }
   
-  .icon-1 { 
+  .imagen1 { 
     
-    grid-area: icon-1; 
+    grid-area: imagen1; 
     width: 200px;
     border-color: #ff9d00;
+    background-color: #000000;
     border-style: solid;
-    padding: 30px;
+    padding: 25px;
+    transition: all 0.5 ease-in ;
+    text-align: center;
+    font-size: 18px;
+    font-family : 'Montserrat', sans-serif;
+    font-weight: bolder;
+    
+
+ }
+ .imagen1:hover {
+    scale: 1.2;
+    border-width: 4px;
+    border-radius: 10%;
+    border-style:solid;
+    border-color: #fd8504;
+    box-shadow: 0 0 25px #ffffa9;
+    color:#e0ac02;
  }
   
-  .icon-2 { grid-area: icon-2;
-     width: 200px;
-     border-color: #ff9d00;
-     border-style: solid;
-     padding: 30px;
+  .imagen2 { 
     
-    }
-  
-  .icon3 { grid-area: icon3;
+    grid-area: imagen2;
     width: 200px;
     border-color: #ff9d00;
+    background-color: #000000;
     border-style: solid;
-    padding: 30px;
+    padding: 25px;
+    transition: all 0.5 ease-in ;
+    text-align: center;
+    font-size: 18px;
+    font-family : 'Montserrat', sans-serif;
+    font-weight: bolder;
+    }
+  
+    .imagen2:hover {
+        scale: 1.2;
+        border-width: 4px;
+        border-radius: 10%;
+        border-style:solid;
+        border-color: #fd8504;
+        box-shadow: 0 0 25px #ffffa9;
+        color:#e0ac02;
+
+
+
+    }
+  .imagen3 { grid-area: imagen3;
+    width: 200px;
+    border-color: #ff9d00;
+    background-color: #000000;
+    border-style: solid;
+    padding: 25px;
+    transition: all 0.5 ease-in ;
+    text-align: center;
+    font-size: 18px;
+    font-family : 'Montserrat', sans-serif;
+    font-weight: bolder;
 
 }
   
-  .video { grid-area: video;
+
+.imagen3:hover {
+    scale: 1.2;
+        border-width: 4px;
+        border-radius: 10%;
+        border-style:solid;
+        border-color: #fd8504;
+        box-shadow: 0 0 25px #ffffa9;
+        color:#e0ac02;
+}
+  
+ 
+ 
+
+.video { grid-area: video;
     display: grid;
     vertical-align: top;
     align-content: flex-start;
@@ -293,6 +355,8 @@ iframe {
         justify-content:center;
         align-items: center;
         text-align: center;
+        background-color:#fd8504;
+        color: #000000;
        
     }
      
@@ -307,7 +371,8 @@ iframe {
     justify-content: center;
     text-align: center; 
     border-style: solid;
-    border-color: #faf1f1  2px  ;
+    border-color:#000000 ;
+    color: #000000;
    }
 
    .textoaside2 {
@@ -317,7 +382,7 @@ iframe {
     text-align: center; 
     border-style: solid;
     border-color: #090000  2px  ;
-    background-color: hsl(41, 94%, 50%);
+    background-color: hsl(0, 0%, 0%);
     color: #000000;
     font-weight: bolder;
     font-size: 34px;
