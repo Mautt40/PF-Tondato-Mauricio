@@ -8,23 +8,61 @@
 
 body {
 
-display:flex;
+display:grid;
+min-width: 90%;
+align-content: center;
 justify-content: center;
-flex-direction: column; 
-align-items: center;
 background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #1c1012, #2f191c, #442124, #743730, #a25333, #c8762e, #e5a020);
-font-family: inherit;
+font-family: 'Montserrat', sans-serif;
 }
 
 
-li {
-display:inline-block ; 
-font-size: 35px; 
-padding: 5px;  
-margin-right: 40px; 
-text-align: center;
+header {
+    background-color: black; 
+    height: 500px; 
+    
+}
+.logo {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+} 
 
+img {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    width:900px ;
+    max-width: 100%;
+}
 
+ul {
+    display: flex;
+    align-content: center;
+    justify-content:space-evenly;
+
+}
+
+ul li a {
+    border-radius: 15px;
+    padding: 12px;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    justify-content: space-between;
+    line-height: 36px;
+    font-size: 40px;
+    color: rgb(241, 236, 236);
+    transition: .3s;
+}
+
+ul li a:hover {
+    color: #f1c70a;
+    box-shadow: 0 0 25px #f99b05;
+    text-shadow:  13px #e5d520;
+    border-style: solid #f1c70a; 
+    width: 3px;
+    
 }
 
 
@@ -40,36 +78,9 @@ background-image: url(../img/backg.jpeg);
 background-size:cover;
 background-attachment: fixed;
 background-repeat: no-repeat;
-background-position: 100%;
-
- 
-
-
-
-
+background-position:100%;
 }
 
-ul li a {
-    border-radius: 15px;
-    padding: 12px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
-    line-height: 36px;
-    font-size: 30px;
-    color: rgb(241, 236, 236);
-    transition: .3s;
-  }
-  
- 
-  ul li a:hover {
-    color: #f1c70a;
-    box-shadow: 0 0 25px #f99b05;
-    text-shadow:  13px #e5d520;
-    border-style: solid #f1c70a; 
-    width: 3px;
-    
-  }
 
 p {
 color: antiquewhite;
@@ -82,24 +93,133 @@ text-decoration: none;
 
 }
 
-header {
-background-color: black; 
-height: 500px; 
+.textointro {
+    display: inline-flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-direction: column;
+    color: rgb(206, 119, 4); 
+    margin-top:25px; 
+    text-align:center;
+    justify-content:center;
+    font-size:28px;
+    align-items: center;
+    flex-wrap: wrap;
+   
+  
 
 }
 
-img {
-display: inline-block;
-text-align: center;
-width:800px ;
-max-width: 100%;
+.contenedor {  
+    display:grid;
+    margin-top: 5rem;
+    margin-bottom: 10rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15rem 30rem;
+    column-gap: 15px; 
+    align-items: center;
+    justify-items: center;
+    grid-template-areas:
+      
+    "imagen1 imagen2 imagen3"
+    "salas salas salas" ;
 
-}
-
-
-
-h2 {
+      
+      
+  }
+  
+  .imagen1 { 
     
+    grid-area: imagen1; 
+    width: 200px;
+    border-color: #ff9d00;
+    background-color: #000000;
+    border-style: solid;
+    padding: 25px;
+    transition: all 0.5 ease-in ;
+    text-align: center;
+    font-size: 18px;
+    font-family : 'Montserrat', sans-serif;
+    font-weight: bolder;
+    
+
+ }
+.imagen1:hover {
+    scale: 1.2;
+    border-width: 4px;
+    border-radius: 10%;
+    border-style:solid;
+    border-color: #fd8504;
+    box-shadow: 0 0 25px #ffffa9;
+    color:#e0ac02;
+ }
+  
+  .imagen2 { 
+    
+    grid-area: imagen2;
+    width: 200px;
+    border-color: #ff9d00;
+    background-color: #000000;
+    border-style: solid;
+    padding: 25px;
+    transition: all 0.5 ease-in ;
+    text-align: center;
+    font-size: 18px;
+    font-family : 'Montserrat', sans-serif;
+    font-weight: bolder;
+    }
+  
+    .imagen2:hover {
+        scale: 1.2;
+        border-width: 4px;
+        border-radius: 10%;
+        border-style:solid;
+        border-color: #fd8504;
+        box-shadow: 0 0 25px #ffffa9;
+        color:#e0ac02;
+
+
+
+    }
+ .imagen3 { 
+    grid-area: imagen3;
+    width: 200px;
+    border-color: #ff9d00;
+    background-color: #000000;
+    border-style: solid;
+    padding: 25px;
+    transition: all 0.5 ease-in ;
+    text-align: center;
+    font-size: 18px;
+    font-family : 'Montserrat', sans-serif;
+    font-weight: bolder;
+
+}
+  
+
+.imagen3:hover {
+    scale: 1.2;
+        border-width: 4px;
+        border-radius: 10%;
+        border-style:solid;
+        border-color: #fd8504;
+        box-shadow: 0 0 25px #ffffa9;
+        color:#e0ac02;
+}
+  
+   
+
+.salas {
+    grid-area:salas;
+    width:300px;
+    background-color: #e0ac02;
+/*aca va un carsalrusel*/
+}
+
+h2  {
+  
 display: flex;
 text-decoration: underline; 
 flex-direction:column;
@@ -111,9 +231,8 @@ padding: 25px;
 background-color: orange;
 font-family: 'Roboto', sans-serif;
 align-items: center;
-
-
 }
+
 
 input {
     display: grid;
@@ -190,7 +309,7 @@ table {
     
     padding-top:20PX;
     border-spacing:45px; 
-   text-align: center;
+    text-align: center;
     background-image: url(../img/backg.jpeg);
     
 }
@@ -200,20 +319,9 @@ iframe {
 }
 
 /*atributos de clase*/
-.logo {
-
-    text-align: center;
-}
 
 
-.textointro {
-    color: rgb(206, 119, 4); 
-    margin-top:20px; 
-    text-align:center; 
-    font-size:28px; 
-    margin-left:35px; 
-    margin-right:35px;
-}
+
 
 .menu { 
     text-align:center; 
@@ -221,9 +329,7 @@ iframe {
     border-width: 25px;
     font-family: 'Montserrat', sans-serif;
     transform:translateY(-70px);
-   
 
-     
 }
 
 .blanco {
@@ -237,16 +343,18 @@ iframe {
 
 .contenedor {  
     display:grid;
+    height: 650px;
     margin-top: 5rem;
-    grid-template-columns: 20rem 20rem 20rem;
-    grid-template-rows: 15rem 5rem 30rem;
+    margin-bottom: 10rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 15rem 30rem;
     gap: 100px 100px;
     align-items: center;
     justify-items: center;
     grid-template-areas:
       "imagen1 imagen2 imagen3"
-      "aside1 video video"
-      "aside2 video video";
+      "aside1 salas salas"
+      
       
   }
   
@@ -327,79 +435,17 @@ iframe {
         box-shadow: 0 0 25px #ffffa9;
         color:#e0ac02;
 }
-  
- 
- 
+.contenedor.aside1 {
+    grid-area: aside1;
 
-.video { grid-area: video;
-    display: grid;
-    vertical-align: top;
-    align-content: flex-start;
-    
-  
-   
-    }
+}
 
-    .video iframe {
-        display: grid;
-        width: 650px;
-        height: 640px;
-       align-content: flex-start;
-        
-    }
-  
-    .aside1 {
-        grid-area: aside1;
-        display: grid;
-        flex-wrap: nowrap;
-        justify-content:center;
-        align-items: center;
-        text-align: center;
-        background-color:#fd8504;
-        color: #000000;
-       
-    }
-     
-    .aside2 {
-        display: grid;
-        align-items: stretch;
-
-    }
-   .textoaside {
-    align-items: center;
-    padding: 15px;
-    justify-content: center;
-    text-align: center; 
-    border-style: solid;
-    border-color:#000000 ;
-    color: #000000;
-   }
-
-   .textoaside2 {
-    align-items: stretch;
-    padding: 15px;
-    justify-content: center;
-    text-align: center; 
-    border-style: solid;
-    border-color: #090000  2px  ;
-    background-color: hsl(0, 0%, 0%);
-    color: #000000;
-    font-weight: bolder;
-    font-size: 34px;
-  
-
+   .salas {
+    background-color: #a25333;
+/*aca va un carrusel*/
  }
+ 
    
-
-
-
-
-
-
-
-
-
-
 
 .titulo {
     color: black; 
