@@ -9,7 +9,7 @@
 body {
 
 display:grid;
-min-width: 90%;
+/* min-width: 90%; */
 align-content: center;
 justify-content: center;
 background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #1c1012, #2f191c, #442124, #743730, #a25333, #c8762e, #e5a020);
@@ -23,13 +23,13 @@ header {
     
 }
 .logo {
-    display: flex;
+    display:block;
     text-align: center;
     justify-content: center;
 } 
 
 img {
-    display: grid;
+    display: inline-block;
     justify-content: center;
     align-items: center;
     width:900px ;
@@ -49,7 +49,7 @@ ul li a {
     width: 60px;
     height: 60px;
     text-align: center;
-    justify-content: space-between;
+    justify-content: space-around;
     line-height: 36px;
     font-size: 40px;
     color: rgb(241, 236, 236);
@@ -109,28 +109,40 @@ text-decoration: none;
   
 
 }
-
 .contenedor {  
     display:grid;
     margin-top: 5rem;
-    margin-bottom: 10rem;
-    margin-left: 10%;
-    margin-right: 10%;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 15rem 30rem;
-    column-gap: 15px; 
-    align-items: center;
+    margin-bottom: 5rem;
+     margin-left: 10%; 
+    margin-right: 10%; 
+    grid-template-columns:repeat(4,1fr);
+    grid-template-rows: 15rem;
     justify-items: center;
     grid-template-areas:
-      
-    "imagen1 imagen2 imagen3"
-    "salas salas salas" ;
 
-      
-      
-  }
-  
-  .imagen1 { 
+    "imagen1 imagen2 imagen3 imagen4"
+    
+
+}
+
+ @media screen and (max-width:902px) { 
+    .contenedor {
+   
+    flex-direction: column;
+    grid-template-columns: repeat (2,1fr);}
+    } 
+    
+@media screen and (max-width:400px) {
+    .contenedor {
+         display: flex;
+         flex-direction: column;
+         align-items: center; }
+        }
+
+    
+
+
+.imagen1 { 
     
     grid-area: imagen1; 
     width: 200px;
@@ -209,31 +221,72 @@ text-decoration: none;
         color:#e0ac02;
 }
   
-   
-
-.salas {
-    grid-area:salas;
-    width:300px;
-    background-color: #e0ac02;
-/*aca va un carsalrusel*/
+.imagen4 { 
+    grid-area: imagen4;
+    width: 200px;
+    height: 240px;
+    border-color: #ff9d00;
+    background-color: #000000;
+    border-style: solid;
+    padding: 25px;
+    transition: all 0.5 ease-in ;
+    text-align:center;
+    font-size: 18px;
+    font-family : 'Montserrat', sans-serif;
+    font-weight: bolder;
 }
+
+    .imagen4:hover {
+        scale: 1.2;
+            border-width: 4px;
+            border-radius: 10%;
+            border-style:solid;
+            border-color: #fd8504;
+            box-shadow: 0 0 25px #ffffa9;
+            color:#e0ac02;
+    }
+
+    
+
+#carouselExampleIndicators {
+   display:flex;
+   width: 600px;
+   height: 700px;
+   border-top-style: solid;
+   text-align:center;
+   margin-bottom: 10rem;
+   margin-top: 5rem;
+   align-content: center;
+   justify-content: center;
+   flex-wrap: nowrap;
+   margin: auto;
+
+}
+
+
+
 
 h2  {
   
 display: flex;
-text-decoration: underline; 
+text-decoration:none;
 flex-direction:column;
-font-size: 30px; 
-border-style: solid;
-border-radius: 18px;
-border-color: rgb(254, 238, 13); 
+height: 100px;
+font-size: 40px; 
 padding: 25px; 
-background-color: orange;
+margin-bottom: 5rem;
+background-image: url(../img/backg.jpeg);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
 font-family: 'Roboto', sans-serif;
 align-items: center;
 }
 
+iframe {
+    max-width: 100%;
 
+}
 input {
     display: grid;
     margin-top:25px; 
@@ -314,12 +367,6 @@ table {
     
 }
 
-iframe {
-    max-width: 100%;
-}
-
-/*atributos de clase*/
-
 
 
 
@@ -340,149 +387,63 @@ iframe {
     margin-right: 35px;
  }
 
-
-.contenedor {  
-    display:grid;
-    height: 650px;
-    margin-top: 5rem;
-    margin-bottom: 10rem;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 15rem 30rem;
-    gap: 100px 100px;
-    align-items: center;
-    justify-items: center;
-    grid-template-areas:
-      "imagen1 imagen2 imagen3"
-      "aside1 salas salas"
-      
-      
-  }
-  
-  .imagen1 { 
-    
-    grid-area: imagen1; 
-    width: 200px;
-    border-color: #ff9d00;
-    background-color: #000000;
-    border-style: solid;
-    padding: 25px;
-    transition: all 0.5 ease-in ;
-    text-align: center;
-    font-size: 18px;
-    font-family : 'Montserrat', sans-serif;
-    font-weight: bolder;
-    
-
- }
- .imagen1:hover {
-    scale: 1.2;
-    border-width: 4px;
-    border-radius: 10%;
-    border-style:solid;
-    border-color: #fd8504;
-    box-shadow: 0 0 25px #ffffa9;
-    color:#e0ac02;
- }
-  
-  .imagen2 { 
-    
-    grid-area: imagen2;
-    width: 200px;
-    border-color: #ff9d00;
-    background-color: #000000;
-    border-style: solid;
-    padding: 25px;
-    transition: all 0.5 ease-in ;
-    text-align: center;
-    font-size: 18px;
-    font-family : 'Montserrat', sans-serif;
-    font-weight: bolder;
-    }
-  
-    .imagen2:hover {
-        scale: 1.2;
-        border-width: 4px;
-        border-radius: 10%;
-        border-style:solid;
-        border-color: #fd8504;
-        box-shadow: 0 0 25px #ffffa9;
-        color:#e0ac02;
-
-
-
-    }
-  .imagen3 { grid-area: imagen3;
-    width: 200px;
-    border-color: #ff9d00;
-    background-color: #000000;
-    border-style: solid;
-    padding: 25px;
-    transition: all 0.5 ease-in ;
-    text-align: center;
-    font-size: 18px;
-    font-family : 'Montserrat', sans-serif;
-    font-weight: bolder;
-
-}
-  
-
-.imagen3:hover {
-    scale: 1.2;
-        border-width: 4px;
-        border-radius: 10%;
-        border-style:solid;
-        border-color: #fd8504;
-        box-shadow: 0 0 25px #ffffa9;
-        color:#e0ac02;
-}
-.contenedor.aside1 {
-    grid-area: aside1;
-
-}
-
-   .salas {
-    background-color: #a25333;
-/*aca va un carrusel*/
- }
- 
-   
-
 .titulo {
     color: black; 
     text-decoration: underline;
     text-align: center;
 }
 
-.ubicacion iframe {
+.ubicacion {
     display: flex;
-    flex-direction: column;
-    align-content: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+.ubicacion iframe{
+    max-width: 100%;
     margin-bottom: 40px;
     border-style: solid;
-    border-width: 10px; border-color: darkorange;
+    border-width: 10px; border-color: rgb(0, 0, 0);
+    justify-items: center;
+    flex-wrap: nowrap;
+    text-align: center;
+
    
 }
 
+/* -----------------PÁGINA SALAS----------------------*/
 
-.galeria { display: inline-block;
+
+
+
+
+.galeria { 
+display:inline-block;
 margin-bottom: 40px;
 border-style: solid; 
 color: rgb(31, 7, 7);
 background-color: rgb(44, 44, 44);
-margin-left: 100px;
-margin-right: 100px;
+align-items: center;
+justify-content: center;
+
+
+
+
 }
 
-.galeria img {width: 30%;
-    margin-left: 32%;
+.galeria img {
+    width: 500px;
     margin-top: 15px;
-    border-width: 10px; border-style: ridge;
+    border-width: 5px; 
+    border-style: ridge;
+    align-items:  center;
+    text-align: center;
 
 }
 
 .galeria a {
    display: inline-block;
-    background-color: rgb(255, 255, 0); box-shadow: rgb(216, 66, 66);
+   background-color: rgb(234, 175, 12); box-shadow: rgb(216, 66, 66);
    color: black;
    padding: 15px;
    font-family: 'Roboto', sans-serif;
