@@ -9,7 +9,8 @@
 
 body {
 
-display:grid;
+display:flex;
+flex-direction: column;
 align-content: center;
 justify-content: center;
 background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #1c1012, #2f191c, #442124, #743730, #a25333, #c8762e, #e5a020);
@@ -19,15 +20,16 @@ font-family: 'Montserrat', sans-serif;
 
 header { 
     background-color: black; 
-    height: 600px; 
+    height: 600px;
+    justify-content: center; 
+    align-items: center;
+    text-align: center;
 }
     
 
 header img {
     max-width: 100%;
 }
-
-   
 
 
 img {
@@ -40,35 +42,37 @@ img {
 ul {
     display: flex;
     align-content: center;
-    justify-content:space-evenly;
+    justify-content:space-evenly; 
 
 }
 
-ul li a {
-    border-radius: 15px;
-    padding: 12px;
-    width: 60px;
-    height: 60px;
-    text-align: center;
+.nav-item {
+    padding: 10px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
     justify-content: space-evenly;
-    line-height: 36px;
-    font-size: 40px;
-    color: rgb(241, 236, 236);
     transition: .3s;
-}
-
-
-
-ul li a:hover {
-    color: #f1c70a;
-    box-shadow: 0 0 25px #f99b05;
-    text-shadow:  13px #e5d520;
-    border-style: solid #f1c70a; 
-    width: 3px;
+   
+}       
+ .nav-link {
+    color: #e0ac02;
+ }
+  
+  ul li a:hover::before {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px #ffee10;
+  }
+  
+ .nav-link:hover {
+    color: #ffb310;
+    box-shadow: 0 0 20px #ffee10;
+    text-shadow: 0 0 15px #f2e965;
+  }
     
-}
 
-@media (max-width:480px){
+
+@media screen and (max-width:480px){
     .menu ul  {
         display: flex;
         flex-direction:column;
@@ -76,16 +80,10 @@ ul li a:hover {
         row-gap:10px ;
         align-content: center;
         text-align:center;
-        justify-items: center;margin-bottom: 3rem;
-
-
-        
-    }
+        justify-items: center;
+        margin-bottom: 3rem;
+} 
 }
-
-    
-
-    
 
 
 h1 {
@@ -101,6 +99,7 @@ background-size:cover;
 background-attachment: fixed;
 background-repeat: no-repeat;
 background-position:100%;
+justify-content: center;
 }
 @media (max-width:480px){
     .h1 {
@@ -111,13 +110,17 @@ background-position:100%;
         text-align: center;
         justify-items: center;
         margin-top: 5rem;
+        height:150px;
+      
     
     
     }}
 
 p {
 color: antiquewhite;
-    font-size: 23px;   
+    font-size: 23px;
+    font-family:"roboto" sans-serif;
+    text-align: center;
 }
 
 a  {
@@ -157,8 +160,16 @@ text-decoration: none;
 
 }
 
-    
+ @media screen and (max-width:796px) {
+    .contenedor{
+        display: flex;
+        flex-direction: column;
+        align-items:center;
+        text-align: center;row-gap: 10px;
 
+    }
+ }
+     
 
 .imagen1 { 
     
@@ -176,7 +187,7 @@ text-decoration: none;
     font-weight: bolder;
     
 
- }
+}
 .imagen1:hover {
     scale: 1.2;
     border-width: 4px;
@@ -185,9 +196,9 @@ text-decoration: none;
     border-color: #fd8504;
     box-shadow: 0 0 25px #ffffa9;
     color:#e0ac02;
- }
-  
-  .imagen2 { 
+}
+
+.imagen2 { 
     
     grid-area: imagen2;
     width: 200px;
@@ -201,8 +212,7 @@ text-decoration: none;
     font-size: 18px;
     font-family : 'Montserrat', sans-serif;
     font-weight: bolder;
-    }
-  
+    } 
     .imagen2:hover {
         scale: 1.2;
         border-width: 4px;
@@ -212,9 +222,8 @@ text-decoration: none;
         box-shadow: 0 0 25px #ffffa9;
         color:#e0ac02;
 
-
-
     }
+
  .imagen3 { 
     grid-area: imagen3;
     width: 200px;
@@ -230,7 +239,6 @@ text-decoration: none;
     font-weight: bolder;
 
 }
-  
 
 .imagen3:hover {
     scale: 1.2;
@@ -241,7 +249,7 @@ text-decoration: none;
         box-shadow: 0 0 25px #ffffa9;
         color:#e0ac02;
 }
-  
+
 .imagen4 { 
     grid-area: imagen4;
     width: 200px;
@@ -266,22 +274,22 @@ text-decoration: none;
             border-color: #fd8504;
             box-shadow: 0 0 25px #ffffa9;
             color:#e0ac02;
-    }
+    } 
 
     
 
 #carouselExampleIndicators {
-   display:flex;
-   width: 600px;
-   height: 700px;
-   border-top-style: solid;
-   text-align:center;
-   margin-bottom: 10rem;
-   margin-top: 5rem;
-   align-content: center;
-   justify-content: center;
-   flex-wrap: nowrap;
-   margin: auto;
+display:flex;
+width: 600px;
+height: 700px;
+border-top-style: solid;
+text-align:center;
+margin-bottom: 10rem;
+margin-top: 5rem;
+align-content: center;
+justify-content: center;
+flex-wrap: nowrap;
+margin: auto;
 
 }
 
@@ -289,7 +297,7 @@ text-decoration: none;
 
 
 h2  {
-  
+
 display: flex;
 text-decoration:none;
 flex-direction:column;
@@ -303,38 +311,41 @@ background-attachment: fixed;
 background-size: cover;
 font-family: 'Roboto', sans-serif;
 align-items: center;
+text-align: center;
 }
 
 iframe {
-    max-width: 100%;
-
+max-width: 100%;
 }
+
 input {
-    display: grid;
-    margin-top:25px; 
-    background-color: rgb(204, 204, 204);
-    text-align: center;
-    align-items: center;
+display: grid;
+margin-top:25px; 
+background-color: rgb(204, 204, 204);
+text-align: center;
+align-items: center;
    
 }
 
 fieldset {
-    width:800px ;
-    height: 900px;
-    margin-top: 15px; 
-    background-image: url(../img/backg.jpeg); 
-    font-size:32px; 
-    display:grid;
-    text-align: center;
-    align-content: center;
-    
-    padding: 15px;
-    box-shadow:2rem; 
-    border-color:rgb(241, 165, 2);
-    border-width: 15px; 
-    color: rgb(7, 4, 0);
-    border-radius: 20px;
-    
+display:flex;
+flex-direction: column;
+width:600px ;
+height:900px; 
+background-image: url(../img/backg.jpeg); 
+font-size:24px; 
+text-align: center;
+align-items: center;
+background-repeat: no-repeat; 
+
+background-size:initial;
+padding: 15px;
+box-shadow:2rem; 
+border-color:rgb(241, 165, 2);
+border-width: 15px; 
+color: rgb(7, 4, 0);
+border-radius: 20px;
+
  
 }
 label {
@@ -352,7 +363,7 @@ figure {
 
 
 h5  { 
-    color:#faf1f1;
+    color:#f5ebeb;
     font-size:15px;
     font-weight: lighter; 
     font-family: 'Roboto', sans-serif;
@@ -363,10 +374,10 @@ h5  {
     margin-bottom:0%;
     
 }
-   
-       
+
+
 th {
-    background-color: burlywood;
+    background-color: rgb(108, 42, 9);
     padding: 25px;
     font-size: 24px;
     text-align: center;
@@ -417,27 +428,35 @@ table {
 
 .ubicacion {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-align: center;
+    padding: 5px;
     
 }
 .ubicacion iframe{
     max-width: 100%;
     margin-bottom: 40px;
-    border-style: solid;
-    border-width: 10px; border-color: rgb(0, 0, 0);
-    justify-items: center;
-    flex-wrap: nowrap;
     text-align: center;
+    align-content: center;
 
    
 }
 
 /* -----------------PÁGINA SALAS----------------------*/
 
+#salas-review{
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+}
 
+.descripcion {
+font-size: 20px;
+margin-top: 2rem;
 
-
+}
 
 .galeria { 
 display:inline-block;
@@ -447,6 +466,8 @@ color: rgb(31, 7, 7);
 background-color: rgb(44, 44, 44);
 align-items: center;
 justify-content: center;
+text-align: center;
+
 
 
 
@@ -456,6 +477,7 @@ justify-content: center;
 .galeria img {
     width: 500px;
     margin-top: 15px;
+    margin-bottom: 20px;
     border-width: 5px; 
     border-style: ridge;
     align-items:  center;
@@ -474,12 +496,11 @@ justify-content: center;
    border-color: black; border-style:double;
    border-width: 5px;
    text-align: center;
-   margin-bottom: 30px;
-   margin-left: 75%;
+   margin-bottom: 25px;
    border-radius: 15px;
 }
 
-.galeria h4 {
+.nombresala {
     color: darkorange; border-style: solid; border-color: darkorange;
     padding: 10px;
     background-color: black;
