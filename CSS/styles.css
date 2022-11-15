@@ -539,13 +539,6 @@ filter: grayscale(70);
 }
 
 
-    
-
-
-
-/*atributos id*/
-
-
 #multi {
     display: grid;
     grid-template-columns: auto;
@@ -565,12 +558,11 @@ filter: grayscale(70);
     text-decoration: underline;
     text-align: center;
     
-   
+
 }
 
 a:hover {
     color: gold;
-  
 
     
 }
@@ -622,6 +614,73 @@ a:hover {
     margin-top: 5rem;
     row-gap: 10rem;
 }
- 
+
+.info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+
+}
+
+
+.main-block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    
+    }
+    form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 25px;
+    margin: 25px;
+    
+    }
+.mensaje {
+    
+    display: flex;    
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #000000;
+    outline: none;
+    }
+  
+   
+    button {
+    
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #000407; 
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    }
+    button:hover {
+    background: #f6ea01;
+    color: #000000;
+    } 
+  
+    button.btn.btn-primary.collapsed {
+        background-color: #000000;
+        color: #f2e965;
+    }
+    
+    .btn-primary {
+        background-color: #000000;
+        font-family: "monserrat" sans-serif;
+        border-color:#e5a020;
+    }
+
 
     
