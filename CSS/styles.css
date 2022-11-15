@@ -82,13 +82,14 @@ ul {
         text-align:center;
         justify-items: center;
         margin-bottom: 3rem;
+        margin-bottom: 2rem;
 } 
 }
 
 
 h1 {
 display: flex;
-margin-top: 2rem;
+margin-top: 3rem;
 margin-bottom: 2rem;
 padding: 13rem;
 color:rgb(9, 8, 0);
@@ -168,8 +169,7 @@ text-decoration: none;
         text-align: center;row-gap: 10px;
 
     }
- }
-     
+}
 
 .imagen1 { 
     
@@ -224,7 +224,7 @@ text-decoration: none;
 
     }
 
- .imagen3 { 
+.imagen3 { 
     grid-area: imagen3;
     width: 200px;
     border-color: #ff9d00;
@@ -327,16 +327,20 @@ align-items: center;
    
 }
 
+.contacto {
+   margin-top: 5rem;
+}
+
 fieldset {
 display:flex;
 flex-direction: column;
 width:600px ;
-height:900px; 
-background-image: url(../img/backg.jpeg); 
+height:600px; 
 font-size:24px; 
 text-align: center;
 align-items: center;
-background-repeat: no-repeat; 
+background-repeat: no-repeat;
+justify-content: center; 
 
 background-size:initial;
 padding: 15px;
@@ -393,10 +397,13 @@ td {
 
 table {
     
-    padding-top:20PX;
-    border-spacing:45px; 
+    margin-top: 5rem;
+    display: flex;
+    padding-top:5PX;
     text-align: center;
-    background-image: url(../img/backg.jpeg);
+    align-items: center;
+    justify-content: center;
+    
     
 }
 
@@ -444,7 +451,6 @@ table {
    
 }
 
-/* -----------------PÁGINA SALAS----------------------*/
 
 #salas-review{
     margin-top: 5rem;
@@ -518,10 +524,22 @@ text-align: center;
 .faq {
     color: aliceblue;
 }
+
+.cierre {
+    font-size: 25px;
+    font-family:"monserrat" sans-serif;
+    color: #ffd000f5;
+    font-weight: bolder;
+    background-color: #020100;
+    margin: 15px;
+
+}
 .footerimg {
 filter: grayscale(70);
 }
 
+
+    
 
 
 
@@ -575,24 +593,35 @@ a:hover {
 }
 #tabla {
     
-    display: inline-block;
-    background-color: rgb(141, 95, 45);
+    display:flex;
     text-align: center;
     margin-left: 30px;
     margin-top: 30px;
     font-family: 'Roboto', sans-serif;
     font-weight:bold;
-    margin-bottom: 75px;
+    align-items: center;
+    justify-content: center;
+    
+
 }
- #tabla input {
+ #tabla td input {
+    flex-direction: column;
     background-color: black;
     color: aliceblue;
     font-size:24px;
     text-align: center;
+    justify-content: center;
+    align-items: center;
+
     
  }
 
-
+#faq {
+    font-family:"monserrat" sans-serif;
+    font-size: 24px;
+    margin-top: 5rem;
+    row-gap: 10rem;
+}
  
 
     
