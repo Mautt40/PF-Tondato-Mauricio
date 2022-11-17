@@ -428,63 +428,50 @@ table {
        
 .productos {
   
-    display:grid;
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-left: 10%; 
     margin-right: 10%; 
-    grid-template-columns:repeat(4,1fr);
-    grid-template-rows: 15rem;
-    justify-items: center;}
-
-
-
-.productos .caja {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center; row-gap:inherit;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
-
+    justify-items:center
+    
 }
-@media screen and (min-width:443px){
+
+@media screen and (max-width:796px) {
     .productos{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    }.productos .caja {
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom: 4rem;
-    margin-top: 5rem;
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        text-align:center;
 
-}
+    }}
 
+
+    @media screen and (min-width:796px) {
+        .productos{
+            display:inline-block;
+            flex-direction:row;
+            align-items:center;
+            text-align:center;
+            justify-content: center;
     
-.productos .caja div
+        }}
+
+
+
+
+    .productos .caja div
 {
-    display: flex;
-    flex-direction: column;
+    display:inline-block;
+    flex-direction:column;
     width: 250px;
-    height:450px ;
-    border: 2px; border-style: solid; color: black;
+    height:500px ;
+    row-gap: 5px;
+    border: 2px; 
+    border-style: solid; color: black;
     text-align: center;
-    justify-content: center;
+    justify-items: center;
     align-items: center;}
-  
-@media screen and (min-width:883px){
-    .productos.caja div{
-        display: flex;
-        flex-direction: column;
-       
-   
-    }
-}
-    
+
 
 
 
@@ -493,9 +480,23 @@ table {
 {
     text-decoration: none;
     color: rgb(7, 0, 0);
-    background-color: #f3a807; 
+    background-color: #f3a807;
+    border-style: solid black 5px;
+    font-size: larger;
+    border-radius: y;
+    padding: 10px;}
+
+
+input#start {
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
 
 }
+
+
 
 .menu { 
     text-align:center; 
