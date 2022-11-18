@@ -9,8 +9,6 @@
 
 body {
 
-display:flex;
-flex-direction: column;
 align-content: center;
 justify-content: center;
 background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #1c1012, #2f191c, #442124, #743730, #a25333, #c8762e, #e5a020);
@@ -59,12 +57,12 @@ ul {
     color: #e0ac02;
  }
   
-  ul li a:hover::before {
+ul li a:hover::before {
     transform: scale(1.1);
     box-shadow: 0 0 15px #ffee10;
   }
   
- .nav-link:hover {
+.nav-link:hover {
     color: #ffb310;
     box-shadow: 0 0 20px #ffee10;
     text-shadow: 0 0 15px #f2e965;
@@ -298,16 +296,23 @@ text-decoration: none;
 .slider
  {
 display:flex;
-width: 100%;
+width: 600px;
 height: auto;
-border-top-style: solid;
-text-align:center;
-margin-bottom: 5rem;
+margin-bottom: 7rem;
+margin-left: auto;
+margin-right:auto;
 margin-top: 3rem;
-align-content: center;
+align-content:center;
 flex-direction: column;
-
+justify-content:center;
 }
+@media screen and (max-width:991px){
+    .slider{
+        width: 100%;
+        height: auto;
+    }
+}
+
 
 
 h2  {
@@ -318,7 +323,7 @@ flex-direction:column;
 height: 100%;
 font-size: 40px; 
 padding: 25px; 
-margin-bottom: 5rem;
+margin-bottom:10px;
 background-image: url("../img/backg.jpeg");
 background-repeat: no-repeat;
 background-attachment: fixed;
@@ -346,34 +351,11 @@ align-items: center;
    margin-top: 5rem;
 }
 
-fieldset {
-display:flex;
-flex-direction: column;
-width:600px ;
-height:600px; 
-font-size:24px; 
-text-align: center;
-align-items: center;
-background-repeat: no-repeat;
-justify-content: center; 
-
-background-size:initial;
-padding: 15px;
-box-shadow:2rem; 
-border-color:rgb(241, 165, 2);
-border-width: 15px; 
-color: rgb(7, 4, 0);
-border-radius: 20px;
-
- 
-}
 label {
     display:flex;
     width: 150px;
     margin-left: 70px;
 }
-
-
 
 figure {
     display: inline-block; 
@@ -395,44 +377,18 @@ h5  {
 }
 
 
-th {
-    background-color: rgb(108, 42, 9);
-    padding: 25px;
-    font-size: 24px;
-    text-align: center;
-
-}
-td {
-    background-color: orange;
-    padding: 25px;
-    text-align: center;
 
 
-}
-
-table {
-    
-    margin-top: 5rem;
-    display: flex;
-    padding-top:5PX;
-    text-align: center;
-    align-items: center;
-    justify-content: center;
-    
-    
-}
-
-/*acá empiza la correción*/
-
-
-       
 .productos {
   
     margin-top: 5rem;
     margin-bottom: 5rem;
     margin-left: 10%; 
     margin-right: 10%; 
-    justify-items:center
+    justify-items:center;
+    align-items: space-around;
+
+    
     
 }
 
@@ -442,6 +398,7 @@ table {
         flex-direction:column;
         align-items:center;
         text-align:center;
+       
 
     }}
 
@@ -453,24 +410,32 @@ table {
             align-items:center;
             text-align:center;
             justify-content: center;
+            
     
         }}
 
-
-
+.caja {
+    display: inline-block;
+    align-content:space-between;
+    column-gap: 25px;
+}
 
     .productos .caja div
 {
     display:inline-block;
     flex-direction:column;
+    row-gap: 15px;
     width: 250px;
     height:500px ;
-    row-gap: 5px;
-    border: 2px; 
-    border-style: solid; color: black;
+    row-gap: 15px;
+    border: 3px;
+    margin: 15px; 
+    border-style: solid; color: rgb(255, 149, 0);
     text-align: center;
-    justify-items: center;
-    align-items: center;}
+    justify-items:auto;
+    align-items:center;
+
+}
 
 
 
@@ -492,11 +457,7 @@ input#start {
     align-items: center;
     justify-content: center;
     text-align: center;
-
-
 }
-
-
 
 .menu { 
     text-align:center; 
@@ -530,7 +491,8 @@ input#start {
     padding: 5px;
     
 }
- iframe{
+ 
+iframe {
     display:flex;
     width: 100%;
     height: 500px;
@@ -538,15 +500,14 @@ input#start {
     text-align: center;
     align-content: center;
 
-   
 }
 
 
-#salas-review{
+.salas{
     margin-top: 5rem;
     align-items: center;
     text-align: center;
-}
+} 
 
 .descripcion {
 font-size: 20px;
@@ -564,13 +525,10 @@ align-items: center;
 justify-content: center;
 text-align: center;
 
-
-
-
-
 }
 
 .galeria img {
+
     width: 500px;
     margin-top: 15px;
     margin-bottom: 20px;
@@ -582,25 +540,36 @@ text-align: center;
 }
 
 .galeria a {
-   display: inline-block;
-   background-color: rgb(234, 175, 12); box-shadow: rgb(216, 66, 66);
-   color: black;
-   padding: 15px;
-   font-family: 'Roboto', sans-serif;
-   font-weight: bold;
-   font-style: italic;
-   border-color: black; border-style:double;
-   border-width: 5px;
-   text-align: center;
-   margin-bottom: 25px;
-   border-radius: 15px;
+
+display: inline-block;
+background-color: rgb(234, 175, 12); box-shadow: rgb(216, 66, 66);
+color: black;
+padding: 15px;
+font-family: 'Roboto', sans-serif;
+font-weight: bold;
+font-style: italic;
+border-color: black; border-style:double;
+border-width: 5px;
+text-align: center;
+margin-bottom: 25px;
+border-radius: 15px;
 }
 
 .nombresala {
-    color: darkorange; border-style: solid; border-color: darkorange;
-    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    width:auto;
+    height: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    color: rgb(255, 153, 0); 
+    border-style: solid;
+    border-color: rgb(255, 153, 0); 
+    padding: 5px;
     background-color: black;
-    padding-left:25px;border-radius: 15px;
+    border-radius: 15px;
+    align-self: center;
+    text-align: center;
 
 }
 
@@ -609,10 +578,6 @@ text-align: center;
     text-align: center;
     margin-right: 40px;
     font-family: 'Montserrat', sans-serif;
-}
-
-.faq {
-    color: aliceblue;
 }
 
 .cierre {
@@ -628,82 +593,22 @@ text-align: center;
 filter: grayscale(70);
 }
 
-
-#multi {
-    display: grid;
-    grid-template-columns: auto;
-    padding-bottom: 55px;
-    padding-top: 55px;
-    
-
-}
-#galeria { 
-    display:inline-block; 
-    padding-right: 15px; 
-}
-
-#leyend {
-    color: blanchedalmond; 
-    font-family: 'Roboto', sans-serif;
-    text-decoration: underline;
-    text-align: center;
-    
-
-}
-
 a:hover {
     color: gold;
 
     
 }
-#direccion p {
+.nombresala p {
     color: yellow;
     font-family: 'Montserrat', sans-serif;
     font-size:larger;
     font-weight: bold ;
-    margin-left:41% ;
-    
-}
-#mensaje {
-    border-width: 5px;
-    border-style: solid; color: rgb(0, 0, 0);
-    text-align: start;
-}
-
-#faq p {
     text-align: center;
-}
-#tabla {
     
-    display:flex;
-    text-align: center;
-    margin-left: 30px;
-    margin-top: 30px;
-    font-family: 'Roboto', sans-serif;
-    font-weight:bold;
-    align-items: center;
-    justify-content: center;
     
-
-}
- #tabla td input {
-    flex-direction: column;
-    background-color: black;
-    color: aliceblue;
-    font-size:24px;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-
     
- }
-
-#faq {
-    font-family:"monserrat" sans-serif;
-    font-size: 24px;
-    margin-top: 5rem;
-    row-gap: 10rem;
 }
+
 
 .info {
     display: flex;
@@ -744,9 +649,13 @@ a:hover {
     border: 1px solid #000000;
     outline: none;
     }
-  
+
+    .faq {
+        margin-top: 5rem;
+        color: #000000;
+    }
    
-    button {
+button {
     
     width: 100%;
     padding: 10px;
