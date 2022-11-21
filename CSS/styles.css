@@ -338,24 +338,10 @@ width: 100%;
 
 }
 
-input {
-display: grid;
-margin-top:25px; 
-background-color: rgb(204, 204, 204);
-text-align: center;
-align-items: center;
-   
-}
-
 .contacto {
    margin-top: 5rem;
 }
 
-label {
-    display:flex;
-    width: 150px;
-    margin-left: 70px;
-}
 
 figure {
     display: inline-block; 
@@ -383,8 +369,8 @@ h5  {
   
     margin-top: 5rem;
     margin-bottom: 5rem;
-    margin-left: 10%; 
-    margin-right: 10%; 
+    margin-left: 5%; 
+    margin-right: 5%; 
     justify-items:center;
     align-items: space-around;
 
@@ -420,43 +406,60 @@ h5  {
     column-gap: 25px;
 }
 
-    .productos .caja div
+.caja1
 {
+    
     display:inline-block;
     flex-direction:column;
     row-gap: 15px;
-    width: 250px;
-    height:500px ;
-    row-gap: 15px;
+    width: 270px;
+    height:750px ;
+    row-gap: 10px;
     border: 3px;
     margin: 15px; 
-    border-style: solid; color: rgb(255, 149, 0);
-    text-align: center;
+    border-style: solid; color: rgb(1, 0, 0);border-width: 5px;
     justify-items:auto;
     align-items:center;
+    background-image: url("../img/backg.jpeg");
 
 }
 
+p.reservanombres {
+    text-align: center;
+    color: #000000;
+    align-items: center;
+    margin: 5px;
+    background-color: #000000;
+    color: #f29e01;
+  
 
 
+}
+ 
+ 
 
 
-.productos .caja div a 
+.caja1 a 
 {
     text-decoration: none;
     color: rgb(7, 0, 0);
     background-color: #f3a807;
-    border-style: solid black 5px;
     font-size: larger;
-    border-radius: y;
-    padding: 10px;}
+    padding :20px;
+    border-radius: 15px;
+    border-style: solid black;
+    border-width: 2px;
+    }
+    
 
 
 input#start {
     width: 100%;
+    height: 80px;
     align-items: center;
     justify-content: center;
     text-align: center;
+    margin-top: 10px;
 }
 
 .menu { 
