@@ -550,6 +550,7 @@ iframe {
   font-family: "monserrat" sans-serif;
   color: rgba(255, 208, 0, 0.9607843137);
   font-weight: bolder;
+  border-radius: 15px;
   background-color: #020100;
   margin: 15px;
 }
@@ -611,6 +612,16 @@ form {
   color: #000000;
 }
 
+.faq img {
+  display: flex;
+  width: 600px;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  align-content: center;
+  flex-direction: column;
+  justify-content: center;
+}
 button {
   width: 100%;
   padding: 10px;
