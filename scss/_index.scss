@@ -1,0 +1,297 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    align-content: center;
+    justify-content: center;
+    background-image: linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #1c1012, #2f191c, #442124, #743730, #a25333, #c8762e, #e5a020);
+    font-family: "Montserrat", sans-serif;
+}
+
+header {
+    background-color: black;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+    max-width: 100%;
+    }
+}
+
+img {
+    display: inline-block;
+    justify-content: center;
+    max-width: 100%;
+}
+
+ul {
+    display: flex;
+    align-content: center;
+    justify-content: space-evenly;
+        li {
+            a {
+                &:hover::before {
+  transform: scale(1.1);
+  box-shadow: 0 0 15px #ffee10;
+        }   }   }   }  
+
+
+.nav-item {
+    padding: 10px;
+    font-family: "Montserrat", sans-serif;
+    font-size: 35px;
+    color: rgb(0, 0, 0);
+    justify-content: space-evenly;
+    transition: 0.3s;
+}
+
+.nav-link {
+    color: #e0ac02;
+    &:hover {
+        color: #ffb310;
+        box-shadow: 0 0 20px #ffee10;
+        text-shadow: 0 0 15px #f2e965;
+        }  
+}
+
+@media screen and (max-width: 439px) {
+    .menu ul {
+    display: flex;
+    flex-direction: column;
+    font-size: 14px;
+    row-gap: 5px;
+    align-content: center;
+      text-align: center;
+      justify-items: center;
+      margin-bottom: 4rem;
+    }
+  }
+  h1 {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 7rem;
+    color: rgb(9, 8, 0);
+    font-size: 45px;
+    font-family: "Montserrat", sans-serif;
+    background-image: url("../img/backg.jpeg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-position: 100%;
+    justify-content: center;
+  }
+  
+  @media (max-width: 419px) {
+    .h1 {
+      display: flex;
+      flex-direction: column;
+      row-gap: 20px;
+      align-content: center;
+      text-align: center;
+      justify-items: center;
+      margin-top: 8rem;
+      height: 100px;
+    }
+  }
+  p {
+    color: antiquewhite;
+    font-size: 23px;
+    font-family: "roboto" sans-serif;
+    text-align: center;
+}
+
+a {
+    color: aliceblue;
+    text-decoration: none;
+}
+
+.textointro {
+    display: inline-flex;
+    margin-left: 10%;
+    margin-right: 10%;
+    color: rgb(206, 119, 4);
+    margin-top: 25px;
+    text-align: center;
+    justify-content: center;
+    font-size: 28px;
+    align-items: center;
+}
+
+.contenedor {
+    display: grid;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 15rem;
+    justify-items: center;
+    grid-template-areas: "imagen1 imagen2 imagen3 imagen4";
+}
+
+@media screen and (max-width: 796px) {
+.contenedor {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+row-gap: 10px;
+    }
+}
+
+.imagen1 {
+grid-area: imagen1;
+width: 200px;
+border-color: #ff9d00;
+color: #000000;
+background-color: #000000;
+border-style: solid;
+padding: 25px;
+transition: all 0.5 ease-in;
+text-align: center;
+    p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    color: #000000;}
+}
+
+.imagen1:hover {
+    scale: 1.2;
+    border-width: 4px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #fd8504;
+    box-shadow: 0 0 25px #f8e42e;
+    background-color: #fd8504;
+}
+
+.imagen2 {
+    grid-area: imagen2;
+    width: 200px;
+    border-color: #ff9d00;
+    background-color: #000000;
+    color: #000000;
+    border-style: solid;
+    padding: 25px;
+    transition: all 0.5 ease-in;
+    text-align: center;
+p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    color: #000000;
+    }
+}  
+
+.imagen2:hover {
+    scale: 1.2;
+    border-width: 4px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #fd8504;
+    box-shadow: 0 0 25px #f8e42e;
+    background-color: #fd8504;
+}
+
+.imagen3 {
+    grid-area: imagen3;
+    width: 200px;
+    border-color: #ff9d00;
+    background-color: #000000;
+    color: #000000;
+    border-style: solid;
+    padding: 25px;
+    transition: all 0.5 ease-in;
+    text-align: center;
+p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    color: #000000;
+    }
+}  
+
+.imagen3:hover {
+    scale: 1.2;
+    border-width: 4px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #fd8504;
+    box-shadow: 0 0 25px #f8e42e;
+    background-color: #fd8504;
+  }
+  
+  .imagen4 {
+    grid-area: imagen4;
+    width: 200px;
+    height: 240px;
+    border-color: #ff9d00;
+    background-color: #000000;
+    color: #000000;
+    border-style: solid;
+    padding: 25px;
+    transition: all 0.5 ease-in;
+    text-align: center;
+    p {
+    font-size: 18px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: bolder;
+    color: #000000;}
+}
+
+.imagen4:hover {
+    scale: 1.2;
+    border-width: 4px;
+    border-radius: 10%;
+    border-style: solid;
+    border-color: #fd8504;
+    box-shadow: 0 0 25px #f8e42e;
+    background-color: #fd8504;
+  }
+  
+  .slider {
+    display: flex;
+    width: 600px;
+    height: auto;
+    margin-bottom: 7rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  @media screen and (max-width: 991px) {
+    .slider {
+      width: 100%;
+      height: auto;
+    }
+  }
+  h2 {
+    display: flex;
+    text-decoration: none;
+    flex-direction: column;
+    height: 100%;
+    font-size: 40px;
+    padding: 25px;
+    margin-bottom: 10px;
+    background-image: url("../img/backg.jpeg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: "Roboto", sans-serif;
+    align-items: center;
+    text-align: center;
+  }
+  
+  iframe {
+    width: 100%;
+  }
+  

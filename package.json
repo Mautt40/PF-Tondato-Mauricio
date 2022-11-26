@@ -1,0 +1,19 @@
+{
+  "name": "proyecto--the-clockwork",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mautt40/THE-CLOCKWORK.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Mautt40/THE-CLOCKWORK/issues"
+  },
+  "homepage": "https://github.com/Mautt40/THE-CLOCKWORK#readme",
+  "description": ""
+}
