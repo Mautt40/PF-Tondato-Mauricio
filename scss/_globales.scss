@@ -112,7 +112,11 @@ h2,h3 {
     
 }
 
-
+h4 {
+    color: aliceblue;
+    font-family: "Monserat" sans-serif;
+    font-size: 15px;
+}
 
 h5 {
     color: #f5ebeb;
@@ -125,8 +129,6 @@ h5 {
     margin-top: 5px;
     margin-bottom: 0%;
 }  
-
-
 
 .cajitasdeluz {
 width: 200px;
@@ -160,4 +162,50 @@ text-align: center;
 a {
     text-decoration: none;
     font-style: normal;
+}
+
+//footer
+.card {
+    display: flex;
+    flex-direction: column;
+    background-color: #000000;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    text-align: center;
+    column-gap: 15px;
+    padding-bottom: 2rem;
+
+}
+
+.card-body {
+    
+    header {
+        text-align:center;
+        font-size:$fuente_grande;
+        border-style: double;
+        border-color:$color_1;
+    }
+    
+    p {
+    display:flex;
+    text-align: center;
+    color:#c8762e;
+    font-family:$fuente_secundaria;
+    font-size:$fuente_chica;
+    justify-content:center;
+    }
+
+    img {
+    color: #ffb411;
+    width: 50px;
+    height: auto;
+    background-color: #000000;
+    margin-left: 25px;
+    }
+        img:hover {
+        transform: scale(1.3);
+    
+        }
+
 }

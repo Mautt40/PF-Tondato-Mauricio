@@ -109,6 +109,12 @@ h2, h3 {
   font-family: "Roboto", sans-serif;
 }
 
+h4 {
+  color: aliceblue;
+  font-family: "Monserat" sans-serif;
+  font-size: 15px;
+}
+
 h5 {
   color: #f5ebeb;
   font-size: 15px;
@@ -153,6 +159,43 @@ h5 {
 a {
   text-decoration: none;
   font-style: normal;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: #000000;
+  flex-direction: column;
+  align-content: center;
+  justify-content: space-between;
+  text-align: center;
+  column-gap: 15px;
+  padding-bottom: 2rem;
+}
+
+.card-body header {
+  text-align: center;
+  font-size: 25px;
+  border-style: double;
+  border-color: #ea8500;
+}
+.card-body p {
+  display: flex;
+  text-align: center;
+  color: #c8762e;
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  justify-content: center;
+}
+.card-body img {
+  color: #ffb411;
+  width: 50px;
+  height: auto;
+  background-color: #000000;
+  margin-left: 25px;
+}
+.card-body img:hover {
+  transform: scale(1.3);
 }
 
 header {
@@ -291,6 +334,22 @@ p {
   padding: 5px;
 }
 
+.mapa {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  color: rgb(31, 7, 7);
+  background-color: rgb(44, 44, 44);
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+
 iframe {
   display: flex;
   flex-direction: column;
@@ -299,8 +358,8 @@ iframe {
   width: 100%;
   height: 600px;
   margin-bottom: 10px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 5rem;
+  margin-right: 5rem;
   margin-top: 3rem;
   justify-content: center;
 }
@@ -545,30 +604,6 @@ button {
   align-content: center;
   flex-direction: column;
   justify-content: center;
-}
-.faq button {
-  width: 100%;
-  padding: 10px;
-  border: none;
-  background: #000407;
-  font-size: 16px;
-  font-weight: 400;
-  color: #fff;
-}
-.faq button:hover {
-  background: #f6ea01;
-  color: #000000;
-}
-
-button.btn.btn-primary.collapsed {
-  background-color: #000000;
-  color: #f2e965;
-}
-
-.btn-primary {
-  background-color: #000000;
-  font-family: "Montserrat", sans-serif;
-  border-color: #e5a020;
 }
 
 .cierre {
