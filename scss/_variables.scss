@@ -1,0 +1,41 @@
+//variables colores//
+
+$bgimg-body:linear-gradient(to bottom, #000000, #000000, #000000, #000000, #000000, #1c1012, #2f191c, #442124, #743730, #a25333, #c8762e, #e5a020);
+
+$color_1:#ea8500;
+$color_2:rgb(234, 175, 12);
+$color_3:rgba(255, 208, 0, 0.9607843137);
+$color_4:aliceblue;
+$color_5:rgb(44, 44, 44);
+
+//variables fuentes//
+
+$fuente_gral: "Montserrat", sans-serif; 
+
+$fuente_secundaria:"Roboto", sans-serif;
+
+$fuente_grande:25px;
+
+$fuente_mediana:20px;
+
+$fuente_chica:15px;
+
+
+//mixins//
+
+@mixin flex-column-center{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+}
+
+@mixin cajitastexto {
+    font-size: 18px;
+    font-family:$fuente_gral;
+    font-weight: bolder;
+    color: #000000;}
+    
+
+
+    

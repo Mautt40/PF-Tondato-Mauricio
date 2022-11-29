@@ -1,0 +1,34 @@
+header {
+    background-color: black;
+    height: 600px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    img {
+    max-width: 100%;
+    }
+}
+
+.contenedor {
+    display: flex;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+    margin-left: 10%;
+    margin-right: 10%;
+    column-gap: 15px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 25rem;
+    justify-content: center;
+    align-content: stretch;
+    grid-template-areas: "imagen1 imagen2 imagen3 imagen4";
+}
+
+@media screen and (max-width: 742px) {
+.contenedor {
+display: flex;
+flex-direction: column;
+align-items: center;
+text-align: center;
+row-gap: 20px;
+    }
+}

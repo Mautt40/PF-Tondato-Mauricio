@@ -1,0 +1,48 @@
+.faq {
+    margin-top: 5rem;
+    color: #000000;
+    img {
+    display: flex;
+    width: 600px;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+    }
+    
+    button {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    background: #000407;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+    &:hover {
+    background: #f6ea01;
+    color: #000000;
+        }
+    }
+}
+
+button.btn.btn-primary.collapsed {
+    background-color: #000000;
+    color: #f2e965;
+}
+
+.btn-primary {
+    background-color: #000000;
+    font-family:$fuente_gral;
+    border-color: #e5a020;
+}
+.cierre {
+    font-size: 25px;
+    font-family:$fuente_gral;
+    color:$color_2;
+    font-weight: bolder;
+    border-radius: 15px;
+    background-color: #020100;
+    margin: 15px;
+  }

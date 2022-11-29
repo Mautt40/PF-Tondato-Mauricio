@@ -1,0 +1,54 @@
+.info {
+    @include flex-column-center;
+      
+      
+      input {
+        width:20rem;
+        height: 40px;
+        text-align: center;
+        font-size: $fuente_mediana
+      } 
+    }
+    
+    .main-block {
+      @include flex-column-center;
+      min-height: 100vh;
+    }
+    
+    form {
+      @include flex-column-center;
+      padding: 15px;
+      margin: 25px;
+    }
+    
+    .mensaje {
+      @include flex-column-center;
+      padding: 8px;
+      margin-bottom: 20px;
+      border: 1px solid #000000;
+      outline: none;
+  
+      textarea{
+        width: 20rem;
+      }
+    }
+  
+  button {
+    display: flex;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    text-decoration: none;
+    color: rgb(7, 0, 0);
+    background-color: #f3a807;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+    padding: 20px;
+    border-radius: 15px;
+    border-style: solid black;
+    border-width: 3px;
+      &:hover {
+        @extend.botoneshover;
+        } 
+  }

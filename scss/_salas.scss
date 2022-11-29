@@ -1,0 +1,77 @@
+.salas {
+    margin-top: 5rem;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .descripcion {
+    font-size: 15px;
+    margin-top: 2rem;
+  }
+  
+  .galeria {
+    display: inline-block;
+    margin-bottom: 40px;
+    border-style: solid;
+    color: rgb(31, 7, 7);
+    background-color:$color_5;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 2rem;
+    padding-right: 2rem;
+  
+    img {
+    width: 500px;
+    margin-top: 15px;
+    margin-bottom: 20px;
+    border-width: 5px;
+    border-style: ridge;
+    align-items: center;
+    text-align: center;
+  }
+  
+    a {
+    display: inline-block;
+    background-color:$color_2;
+    color: black;
+    padding: 15px;
+    font-family:$fuente_secundaria;
+    font-weight: bold;
+    font-style: italic;
+    border-color: black;
+    border-style: double;
+    border-width: 5px;
+    text-align: center;
+    margin-bottom: 25px;
+    border-radius: 15px;
+  
+      &:hover {
+        @extend.botoneshover;}  
+  
+      p {
+      margin-left: 50px;
+      text-align:justify;
+      margin-right: 50px;
+      font-family:$fuente_gral;
+      }
+    }
+  
+
+.nombresala {
+    
+  @include flex-column-center;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:$color_1;
+  border-style: solid;
+  border-color:$color_1;
+  padding: 5px;
+  background-color: black;
+  border-radius: 15px;
+  align-self: center;
+  text-align: center;
+  }
+}
