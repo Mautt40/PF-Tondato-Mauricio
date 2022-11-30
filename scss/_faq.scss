@@ -1,9 +1,14 @@
 .faq {
     margin-top: 5rem;
     color: #000000;
-    img {
+    
+}
+
+
+
+.logofinal img {
     display: flex;
-    width: 600px;
+    width: 400px;
     height: auto;
     margin-left: auto;
     margin-right: auto;
@@ -11,10 +16,23 @@
     flex-direction: column;
     justify-content: center;
     }
-}
 
 
-   
+.accordion-body {
+   font-size:$fuente_mediana;
+   font-family:$fuente_secundaria ; 
+   background-color:$color_3;
+   text-align: center;
+  }
+
+ .accordion-button {
+        font-size:$fuente_mediana;
+        font-family:$fuente_secundaria ;
+        text-align: center;
+    }
+
+
+
 
 
 

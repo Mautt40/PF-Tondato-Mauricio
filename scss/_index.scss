@@ -115,7 +115,8 @@ grid-area: imagen1;
   align-items: center;
   margin-left: auto;
   margin-right: auto;
-  width: 100%;
+  margin-bottom: 2rem;
+  width: 80%;
   color: rgb(31, 7, 7);
   background-color:$color_5;
   align-items: center;
@@ -123,6 +124,7 @@ grid-area: imagen1;
   text-align: center;
   padding-left: 2rem;
   padding-right: 2rem;
+  padding-bottom: 2rem;
   
 }
 
