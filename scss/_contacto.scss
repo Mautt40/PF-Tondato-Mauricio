@@ -1,5 +1,7 @@
 .info {
-    @include flex-column-center;
+    
+  margin-top: 3rem;
+  @include flex-column-center;
       
       
       input {

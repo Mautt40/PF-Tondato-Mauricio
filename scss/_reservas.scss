@@ -1,6 +1,6 @@
 .productos {
 
-margin-bottom: 5rem;
+margin-bottom: 1rem;
 margin-left: 5%;
 margin-right: 5%;
 justify-items: center;
@@ -27,15 +27,16 @@ align-items: space-around;
 }
   
 .caja {
-    
+
 display: inline-block;
-align-content: space-between;
+align-content: space-around;
 column-gap: 25px;
 margin-bottom: 5rem;
+align-items: center;
 
 }
   
-  .caja1 {
+.caja1 {
     
 display: inline-block;
 flex-direction: column;
@@ -71,8 +72,15 @@ background-image: url("../img/theclock.webp");
   }
 }
 
+.caja1:hover{
+  
+  border-color: gold;
+  box-shadow: 0 0 27px #f8e42e;
+
+}
+
 form {
-    
+
 @include flex-column-center;
 padding: 2px;
 margin: 5px;
@@ -114,4 +122,23 @@ background-color: #000000;
     text-align: center;
     font-size: $fuente_mediana;
     font-family: $fuente_secundaria;
+  }
+
+  .precios p {
+  
+  @include flex-column-center;
+  
+  font-family:$fuente_secundaria;
+  width: auto;
+  height: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color:$color_2;
+  border-style: solid;
+  border-color:$color_1;
+  padding: 5px;
+  background-color: black;
+  border-radius: 15px;
+  align-self: center;
+  text-align: center;
   }
