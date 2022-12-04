@@ -1,10 +1,12 @@
 .productos {
-    margin-bottom: 5rem;
-    margin-left: 5%;
-    margin-right: 5%;
-    justify-items: center;
-    align-items: space-around;
-  }
+
+margin-bottom: 5rem;
+margin-left: 5%;
+margin-right: 5%;
+justify-items: center;
+align-items: space-around;
+
+}
   
   @media screen and (max-width: 796px) {
     .productos {
@@ -22,33 +24,39 @@
       text-align: center;
       justify-content: center;
     }
-  }
-  .caja {
-    display: inline-block;
-    align-content: space-between;
-    column-gap: 25px;
-  }
+}
+  
+.caja {
+    
+display: inline-block;
+align-content: space-between;
+column-gap: 25px;
+margin-bottom: 5rem;
+
+}
   
   .caja1 {
     
-    display: inline-block;
-    flex-direction: column;
-    row-gap: 15px;
-    width: 300px;
-    height: 850px;
-    row-gap: 10px;
-    border: 3px;
-    margin: 15px;
-    border-style: solid;
-    color:$color_1;
-    border-width: 5px;
-    justify-items: auto;
-    align-items: center;
-    background-image: url("../img/theclock.webp");
+display: inline-block;
+flex-direction: column;
+margin-bottom: 5rem;
+row-gap: 15px;
+width: 300px;
+height: 800px;
+row-gap: 10px;
+border: 3px;
+margin: 15px;
+border-style: solid;
+color:$color_1;
+border-width: 5px;
+justify-items: auto;
+align-items: center;
+background-image: url("../img/theclock.webp");
     label {
         color: #f5ebeb;
             }
     a {
+    margin-top: 30px;
     text-decoration: none;
     color: rgb(7, 0, 0);
     background-color: #f3a807;
@@ -65,27 +73,36 @@
 
 form {
     
-    @include flex-column-center;
-    padding: 2px;
-    margin: 5px;
-    margin-bottom: 20px;
-    font-family:$fuente_secundaria ;
+@include flex-column-center;
+padding: 2px;
+margin: 5px;
+margin-bottom: 20px;
+font-family:$fuente_secundaria ;
+    
+
     select{
-      font-size:$fuente_mediana;
-      font-family: $fuente_secundaria;
+margin-bottom: 10px;
+font-size:$fuente_mediana;
+font-family: $fuente_secundaria;
+    }
+
+    label {
+      margin-top:5px ;
     }
   }
-  
-  .opciones {
-    color:$color_1;
-    font-size: $fuente_mediana;
-    border-radius: 15px;
-    align-content: center;
-    text-align: center;
-    margin-bottom: 25px;
-    background-color: #000000;
 
-  }
+
+.opciones p {
+
+color:$color_1;
+font-size: $fuente_mediana;
+border-radius: 15px;
+align-content: center;
+text-align: center;
+margin-bottom: 25px;
+background-color: #000000;
+
+}
   
   
   

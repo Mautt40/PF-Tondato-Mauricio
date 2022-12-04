@@ -364,10 +364,9 @@ p {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-left: auto;
-  margin-right: auto;
   margin-bottom: 2rem;
-  width: 80%;
+  width: 600px;
+  height: 800px;
   color: rgb(31, 7, 7);
   background-color: rgb(44, 44, 44);
   align-items: center;
@@ -378,13 +377,19 @@ p {
   padding-bottom: 2rem;
 }
 
+@media screen and (min-width: 476px) {
+  .mapa {
+    width: 100%;
+    height: 320;
+  }
+}
 iframe {
   display: flex;
   flex-direction: column;
   align-items: center;
   align-content: center;
   width: 100%;
-  height: 600px;
+  height: 100%;
   margin-bottom: 10px;
   margin-left: 5rem;
   margin-right: 5rem;
@@ -493,14 +498,16 @@ iframe {
   display: inline-block;
   align-content: space-between;
   column-gap: 25px;
+  margin-bottom: 5rem;
 }
 
 .caja1 {
   display: inline-block;
   flex-direction: column;
+  margin-bottom: 5rem;
   row-gap: 15px;
   width: 300px;
-  height: 850px;
+  height: 800px;
   row-gap: 10px;
   border: 3px;
   margin: 15px;
@@ -515,6 +522,7 @@ iframe {
   color: #f5ebeb;
 }
 .caja1 a {
+  margin-top: 30px;
   text-decoration: none;
   color: rgb(7, 0, 0);
   background-color: #f3a807;
@@ -535,11 +543,15 @@ form {
   font-family: "Roboto", sans-serif;
 }
 form select {
+  margin-bottom: 10px;
   font-size: 20px;
   font-family: "Roboto", sans-serif;
 }
+form label {
+  margin-top: 5px;
+}
 
-.opciones {
+.opciones p {
   color: #ea8500;
   font-size: 20px;
   border-radius: 15px;
@@ -596,10 +608,10 @@ form {
   align-content: center;
   padding: 8px;
   margin-bottom: 20px;
-  border: 1px solid #000000;
   outline: none;
 }
 .mensaje textarea {
+  margin-top: 15px;
   width: 20rem;
 }
 
@@ -608,6 +620,7 @@ button {
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3rem;
   text-decoration: none;
   color: rgb(7, 0, 0);
   background-color: #f3a807;
@@ -622,12 +635,15 @@ button {
 .faq {
   margin-top: 5rem;
   color: #000000;
+  background-image: url("../img/backg.webp");
 }
 
 .logofinal img {
   display: flex;
   width: 400px;
   height: auto;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
   margin-left: auto;
   margin-right: auto;
   align-content: center;
@@ -646,6 +662,10 @@ button {
   font-size: 20px;
   font-family: "Roboto", sans-serif;
   text-align: center;
+}
+
+.accordion-item {
+  background-color: black;
 }
 
 .cierre {

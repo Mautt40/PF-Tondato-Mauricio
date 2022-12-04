@@ -25,10 +25,10 @@
       @include flex-column-center;
       padding: 8px;
       margin-bottom: 20px;
-      border: 1px solid #000000;
       outline: none;
   
       textarea{
+        margin-top: 15px;
         width: 20rem;
       }
     }
@@ -38,6 +38,7 @@
     justify-content: center;
     margin-left: auto;
     margin-right: auto;
+    margin-bottom: 3rem;
     text-decoration: none;
     color: rgb(7, 0, 0);
     background-color: #f3a807;
