@@ -80,7 +80,7 @@ h1 {
   color: rgb(9, 8, 0);
   font-size: 45px;
   font-family: "Montserrat", sans-serif;
-  background-image: url("../img/backg.jpeg");
+  background-image: url("../img/backg.webp");
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
@@ -99,7 +99,7 @@ h1 {
     height: 100px;
   }
 }
-h2, h3 {
+h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -109,29 +109,18 @@ h2, h3 {
   font-size: 30px;
   padding: 25px;
   margin-bottom: 10px;
-  background-image: url("../img/backg.jpeg");
+  background-image: url("../img/backg.webp");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
-h4 {
+h3 {
   color: aliceblue;
   font-family: "Monserat" sans-serif;
-  font-size: 15px;
-}
-
-h5 {
-  color: #f5ebeb;
-  font-size: 15px;
-  font-weight: lighter;
-  font-family: "Roboto", sans-serif;
-  padding: 25px;
-  background-color: rgb(49, 44, 44);
-  text-align: center;
-  margin-top: 5px;
-  margin-bottom: 0%;
+  font-size: 25px;
+  background-color: #000000;
 }
 
 .cajitasdeluz, .imagen4, .imagen3, .imagen2, .imagen1 {
@@ -167,6 +156,7 @@ h5 {
 a {
   text-decoration: none;
   font-style: normal;
+  color: #000000;
 }
 
 .card {
@@ -180,13 +170,14 @@ a {
   column-gap: 15px;
   padding-bottom: 2rem;
 }
-
-.card-body header {
+.card header {
   text-align: center;
   font-size: 25px;
   border-style: double;
   border-color: #ea8500;
+  background-color: #000000;
 }
+
 .card-body p {
   display: flex;
   text-align: center;
@@ -196,14 +187,37 @@ a {
   justify-content: center;
 }
 .card-body img {
-  color: #ffb411;
   width: 50px;
   height: auto;
   background-color: #000000;
-  margin-left: 25px;
+  margin: 20px;
 }
 .card-body img:hover {
   transform: scale(1.3);
+}
+
+.volver {
+  display: flex;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 10px;
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+  background-color: #f3a807;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+  padding: 20px;
+  border-radius: 15px;
+  border-style: solid black;
+  border-width: 3px;
+}
+.volver a {
+  color: #000000;
+}
+.volver a:hover {
+  color: rgba(255, 208, 0, 0.9607843137);
 }
 
 .div.accordion-body {
@@ -495,7 +509,7 @@ iframe {
   border-width: 5px;
   justify-items: auto;
   align-items: center;
-  background-image: url("../img/theclock.jpg");
+  background-image: url("../img/theclock.webp");
 }
 .caja1 label {
   color: #f5ebeb;
