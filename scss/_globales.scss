@@ -89,7 +89,7 @@ h1 {
     color: rgb(9, 8, 0);
     font-size: 45px;
     font-family:$fuente_gral;
-    background-image: url("../img/backg.jpeg");
+    background-image: url("../img/backg.webp");
     background-size: cover;
     background-attachment: fixed;
     background-repeat: no-repeat;
@@ -109,14 +109,14 @@ h1 {
     }
 }
 
-h2,h3 {
+h2 {
     @include flex-column-center;
     text-decoration: none;
     height: 100%;
     font-size: 30px;
     padding: 25px;
     margin-bottom: 10px;
-    background-image: url("../img/backg.jpeg");
+    background-image: url("../img/backg.webp");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -124,23 +124,15 @@ h2,h3 {
     
 }
 
-h4 {
+
+h3 {
     color: aliceblue;
     font-family: "Monserat" sans-serif;
     font-size: 15px;
+    background-color: #000000;
 }
 
-h5 {
-    color: #f5ebeb;
-    font-size: 15px;
-    font-weight: lighter;
-    font-family: $fuente_secundaria;
-    padding: 25px;
-    background-color: rgb(49, 44, 44);
-    text-align: center;
-    margin-top: 5px;
-    margin-bottom: 0%;
-}  
+
 
 .cajitasdeluz {
 width: 200px;
@@ -189,17 +181,18 @@ a {
     column-gap: 15px;
     padding-bottom: 2rem;
 
+    header{
+    text-align:center;
+    font-size:$fuente_grande;
+    border-style: double;
+    border-color:$color_1;
+    background-color: #000000;
+    }
 }
 
+
 .card-body {
-    
-    header {
-        text-align:center;
-        font-size:$fuente_grande;
-        border-style: double;
-        border-color:$color_1;
-    }
-    
+
     p {
     display:flex;
     text-align: center;
