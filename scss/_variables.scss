@@ -35,6 +35,18 @@ $fuente_chica:15px;
     font-family:$fuente_gral;
     font-weight: bolder;
     color: #000000;}
+
+@mixin estilo-encabezado {
+        background-image: url("../img/backg.webp");
+        background-size:cover;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        background-position:100%;
+        background-clip:border-box;
+
+        
+
+    }
     
 
 

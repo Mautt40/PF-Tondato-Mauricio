@@ -1,3 +1,16 @@
+.encabezado {
+  margin-top: 25px;
+  display: flex;
+  height: 17rem;
+  @include estilo-encabezado;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+
+}
+
+
+
 p {
   color: antiquewhite;
   font-size: 20px;

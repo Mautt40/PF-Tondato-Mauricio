@@ -73,25 +73,21 @@ a.nav-link {
   }
 }
 h1 {
-  display: flex;
   margin-top: 2rem;
   margin-bottom: 5px;
-  padding: 7rem;
+  margin-left: 20px;
+  margin-right: 20px;
   color: rgb(9, 8, 0);
-  font-size: 45px;
+  font-size: 40px;
   font-family: "Montserrat", sans-serif;
-  background-image: url("../img/backg.webp");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 100%;
   justify-content: center;
+  align-content: center;
+  flex-direction: column;
 }
 
 @media (max-width: 419px) {
   .h1 {
     display: flex;
-    flex-direction: column;
     row-gap: 20px;
     align-content: center;
     text-align: center;
@@ -104,15 +100,17 @@ h2 {
   flex-direction: column;
   align-items: center;
   align-content: center;
+  background-image: url("../img/backg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-clip: border-box;
   text-decoration: none;
   height: 100%;
   font-size: 30px;
   padding: 25px;
   margin-bottom: 10px;
-  background-image: url("../img/backg.webp");
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
   font-family: "Roboto", sans-serif;
 }
 
@@ -237,7 +235,7 @@ header img {
 
 .contenedor {
   display: flex;
-  margin-top: 5rem;
+  margin-top: 2rem;
   margin-bottom: 5rem;
   margin-left: 10%;
   margin-right: 10%;
@@ -258,6 +256,21 @@ header img {
     row-gap: 20px;
   }
 }
+.encabezado {
+  margin-top: 25px;
+  display: flex;
+  height: 17rem;
+  background-image: url("../img/backg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-clip: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+
 p {
   color: antiquewhite;
   font-size: 20px;
