@@ -13,10 +13,8 @@ body {
 
 .menu {
   text-align: center;
-  padding: 15px;
-  border-width: 25px;
+  border-width: 10px;
   font-family: "Montserrat", sans-serif;
-  transform: translateY(-80px);
 }
 
 img {
@@ -28,50 +26,48 @@ img {
 ul {
   display: flex;
   align-content: center;
-  justify-content: space-evenly;
+  justify-content: space-around;
 }
 ul li a:hover::before {
   transform: scale(1.1);
-  box-shadow: 0 0 15px #ffbc06;
+  box-shadow: 0 0 30px #ffbc06;
 }
 
-.nav-item {
+li.nav-item {
   padding: 10px;
   font-family: "Montserrat", sans-serif;
   font-size: 35px;
   color: rgb(0, 0, 0);
   justify-content: space-evenly;
-  transition: 0.3s;
-  border-radius: 30px;
-}
-
-a.nav-link {
-  border-radius: 30px 5%;
+  transition: 0.5s;
+  border-radius: 30%;
 }
 
 .nav-link {
   color: #e0ac02;
-  border-radius: 15%;
 }
 .nav-link:hover {
   color: #ffb310;
   box-shadow: 0 0 25px #ffb109;
-  text-shadow: 0 0 15px #f2e965;
+  text-shadow: 0 0 15px #fbf48d;
   animation-delay: 0.5s;
 }
 
-@media screen and (max-width: 439px) {
-  .menu ul {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    font-size: 15px;
-    row-gap: 5px;
-    justify-items: center;
-    margin-bottom: 2rem;
-  }
+.container-fluid {
+  margin-top: 10px;
+  display: flex;
+  height: 17rem;
+  background-image: url("../img/backg.webp");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-position: 100%;
+  background-clip: border-box;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
 }
+
 h1 {
   margin-top: 2rem;
   margin-bottom: 5px;
@@ -79,6 +75,7 @@ h1 {
   margin-right: 20px;
   color: rgb(9, 8, 0);
   font-size: 40px;
+  text-decoration: wavy;
   font-family: "Montserrat", sans-serif;
   justify-content: center;
   align-content: center;
@@ -223,8 +220,9 @@ a {
 }
 
 header {
+  display: inline;
   background-color: black;
-  height: 600px;
+  height: 700px;
   justify-content: center;
   align-items: center;
   text-align: center;
@@ -256,21 +254,6 @@ header img {
     row-gap: 20px;
   }
 }
-.encabezado {
-  margin-top: 25px;
-  display: flex;
-  height: 17rem;
-  background-image: url("../img/backg.webp");
-  background-size: cover;
-  background-attachment: fixed;
-  background-repeat: no-repeat;
-  background-position: 100%;
-  background-clip: border-box;
-  align-items: center;
-  justify-content: center;
-  margin-bottom: 25px;
-}
-
 p {
   color: antiquewhite;
   font-size: 20px;

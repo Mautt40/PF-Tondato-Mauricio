@@ -1,6 +1,7 @@
 header {
+    display:inline;
     background-color: black;
-    height: 600px;
+    height: 700px;
     justify-content: center;
     align-items: center;
     text-align: center;
@@ -8,6 +9,7 @@ header {
     max-width: 100%;
     }
 }
+
 
 .contenedor {
     display: flex;

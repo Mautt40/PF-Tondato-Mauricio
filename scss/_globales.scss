@@ -11,14 +11,13 @@ body {
     font-family:fuente_gral
 }
 
-
 .menu {
 text-align: center;
-padding: 15px;
-border-width: 25px;
+border-width: 10px;
 font-family:$fuente_gral;
-transform: translateY(-80px);
+
 }
+
 
 img {
     display: inline-block;
@@ -26,59 +25,56 @@ img {
     max-width: 100%;
 }
 
-ul {
+ ul {
     display: flex;
     align-content: center;
-    justify-content: space-evenly;
+    justify-content: space-around;
     
         li {
             a {
                 
                 &:hover::before {
                 transform: scale(1.1);
-                box-shadow: 0 0 15px #ffbc06;
+                box-shadow: 0 0 30px #ffbc06;
             }   
         }   
     } 
 }  
 
 
-.nav-item {
+
+li.nav-item {
     padding: 10px;
     font-family:$fuente_gral;
     font-size: 35px;
     color: rgb(0, 0, 0);
     justify-content: space-evenly;
-    transition: 0.3s;
-    border-radius: 30px;
-}
-
-a.nav-link{
-    
-    border-radius: 30px 5%;
-
+    transition: 0.5s;
+    border-radius: 30%;
 }
 
 
 .nav-link {
     color: #e0ac02;
-    border-radius: 15%;
+    
     &:hover {
         color: #ffb310;
         box-shadow: 0 0 25px #ffb109;
-        text-shadow: 0 0 15px #f2e965;
+        text-shadow: 0 0 15px #fbf48d;
         animation-delay:0.5s ;
         }  
 }
 
-@media screen and (max-width: 439px) {
-    .menu ul {
-    @include flex-column-center;
-    font-size:$fuente_chica;
-    row-gap: 5px;
-    justify-items: center;
-    margin-bottom: 2rem;
-    }
+
+.container-fluid {
+    margin-top: 10px;
+    display: flex;
+    height: 17rem;
+    @include estilo-encabezado;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 25px;
+
 }
 
 h1 {
@@ -89,10 +85,12 @@ h1 {
     margin-right:20px ;
     color: rgb(9, 8, 0);
     font-size: 40px;
+    text-decoration: wavy;
     font-family:$fuente_gral;
     justify-content: center;
     align-content: center;
     flex-direction: column;
+    
 
 }
 @media (max-width: 419px) {
