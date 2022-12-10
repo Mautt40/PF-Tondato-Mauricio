@@ -33,6 +33,15 @@ ul li a:hover::before {
   box-shadow: 0 0 30px #ffbc06;
 }
 
+@media screen and (max-width: 495px) {
+  .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+  }
+}
 li.nav-item {
   padding: 10px;
   font-family: "Montserrat", sans-serif;
@@ -43,6 +52,19 @@ li.nav-item {
   border-radius: 30%;
 }
 
+@media screen and (max-width: 420px) {
+  .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+    border-width: 2px;
+    border-radius: 30px;
+    border-color: #ea8500;
+    border-style: solid;
+  }
+}
 .nav-link {
   color: #e0ac02;
 }

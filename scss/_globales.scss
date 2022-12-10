@@ -41,7 +41,16 @@ img {
     } 
 }  
 
-
+@media screen and (max-width: 495px) {
+    .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+    
+        }
+    }
 
 li.nav-item {
     padding: 10px;
@@ -53,7 +62,24 @@ li.nav-item {
     border-radius: 30%;
 }
 
+@media screen and (max-width: 420px) {
+    .nav-links {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    row-gap: 10px;
+    border-width:2px;
+    border-radius: 30px;
+    border-color: $color_1;
+    border-style: solid;
 
+        }
+    }
+
+
+
+    
 .nav-link {
     color: #e0ac02;
     
